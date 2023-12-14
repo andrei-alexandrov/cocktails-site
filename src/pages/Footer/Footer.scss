@@ -1,0 +1,52 @@
+@import "../../variables";
+
+.footer {
+    // margin-top: 5rem;
+    text-align: center;
+    background: linear-gradient(to right, $main-footer-color, $secondary-footer-color);
+    padding: 20px;
+    // background: linear-gradient(to right, rgba(30, 115, 251),rgba(30, 115, 251),rgba(90, 34, 139), rgba(90, 34, 139));
+    backdrop-filter: blur(10px);
+
+    .footer-content {
+
+        .footer-text {
+            color: $third-footer-color;
+            font-size: 19px;
+            line-height: 30px;
+        }
+    }
+
+    .footer-icons>a>svg {
+        transition: transform 1s;
+        margin-right: 3px;
+        margin-left: 3px;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    }
+
+    .screen-reader {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        .footer-content {
+            .footer-text {
+                font-size: 18px;
+            }
+        }
+    }
+}

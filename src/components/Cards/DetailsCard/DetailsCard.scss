@@ -1,0 +1,71 @@
+@import "../../../mixins";
+
+.details-container {
+    margin-top: 8rem;
+
+    .custom-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 40px;
+        background-color: rgba(6, 6, 6, 0.6) !important;
+        color: white !important;
+
+        .body-wrapper {
+            width: 100%;
+
+            ul {
+                right: 1rem;
+                position: relative;
+                list-style: none;
+            }
+
+            .footer-wrapper {
+                display: flex;
+                justify-content: center;
+                gap: 18px;
+
+                .card-btn-add {
+                    @include addButton();
+                    font-size: 13px;
+                }
+
+                .card-btn-goBack {
+                    @include detailsButton();
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 991px) {
+    .custom-card {
+        flex-direction: row !important;
+        justify-content: center;
+        text-align: left;
+        color: white !important;
+        font-size: 16px;
+
+        .details-card-image {
+            max-width: 520px;
+            margin-right: 20px;
+        }
+
+        .body-wrapper {
+            .footer-wrapper {
+                position: relative;
+                gap: 18px;
+                right: 9px;
+                bottom: 4px;
+                height: 73px;
+
+                .card-btn-add,
+                .card-btn-goBack {
+                    font-size: 15px !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+@import "../../variables";
+@import "../../mixins";
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 25px;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .card-item {
+        background-color: rgba(6, 6, 6, 0.6);
+        border-radius: 1rem;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+        width: 330px;
+      
+        &:hover {
+            box-shadow: 0 0 26px $hover-color;
+        }
+
+        .card-body {
+
+            .card-title {
+                color: #ac8b21;
+                background-color: rgb(15, 14, 14, 0.5);
+                font-size: 24px;
+                padding: 5px;
+                border-radius: 5px;
+            }
+
+            .card-type {
+                // display: flex;
+                color: $main-color;
+                font-size: 19px;
+            }
+
+            h2 {
+                font-size: 20px;
+                padding: 5px;
+                background-color: rgb(15, 14, 14);
+                color: white;
+                border-radius: 5px;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            li {
+                margin-bottom: 7px;
+                color: white;
+                font-size: 17px;
+            }
+        }
+    }
+
+    .footer-btn {
+        display: flex;
+        gap: 10px;
+
+        .card-btn-add {
+            @include addButton();
+        }
+
+        .card-btn-remove {
+            @include removeButton();
+        }
+    }
+
+    .card-btn-details {
+        @include detailsButton();
+    }
+}
+
+.error-message {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-top: 2rem;
+}
+
+.nothing-here-lottie {
+    display: flex;
+    justify-content: center;
+    margin-top: -14px;
+
+    svg {
+        width: 200px !important;
+        height: 200px !important;
+    }
+}

@@ -1,0 +1,46 @@
+@import "./variables";
+
+@mixin removeButton() {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    border: none;
+    color: white;
+    background-color: #82000b;
+    padding: 8px;
+    width: 9rem;
+
+    &:hover {
+        color: white;
+        background-color: #dc3545;
+    }
+}
+
+@mixin addButton() {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    color: white;
+    background-color: rgb(0, 55, 100);
+    padding: 8px;
+    width: 9rem;
+
+    &:hover {
+        background-color: rgb(77, 175, 255);
+        color: black;
+    }
+}
+
+@mixin detailsButton() {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    color: white;
+    background-color: #ac8b21;
+    padding: 8px;
+    width: 9rem;
+
+    &:hover {
+        background-color: rgb(240, 211, 142);
+        color: black;
+    }
+}

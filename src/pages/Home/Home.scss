@@ -1,0 +1,49 @@
+.home-container {
+    text-align: center;
+    color: whitesmoke;
+
+    .colorful-line {
+        margin-top: 13px;
+    }
+
+    .page-title {
+        margin-top: 3rem;
+    }
+
+    .input-letter {
+        border-radius: 16px;
+        margin: 10px auto;
+        font-size: 18px;
+        text-align: center;
+
+        &::placeholder {
+            text-align: center;
+        }
+
+        &:focus::placeholder {
+            color: transparent;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .home-container {
+        .colorful-line {
+            margin-top: 80px;
+        }
+
+        .page-title {
+            margin-top: 6rem;
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+    .home-container {
+        .colorful-line {
+            margin-top: 15px;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.starting-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+
+    .title {
+        font-size: 2rem;
+        color: white;
+        margin-bottom: 20px;
+    }
+}
