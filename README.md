@@ -1,6 +1,6 @@
 <div align="center">
   <h2>Cocktails site</h2>
-  <span>Find interesting cocktails and get theirs recipe, if you like a specific one, add it to favorites.</span>
+  <span>Find interesting cocktails and get their recipes. If you like a specific one, add it to favorites.</span>
 </div>
 <br />
 Technologies used: React.js, Sass, react-redux, react-router, gsap, react-boostrap, lottie-react.
