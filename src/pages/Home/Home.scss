@@ -24,6 +24,10 @@
             color: transparent;
         }
     }
+
+    .beautiful-text {
+        margin-bottom: -53px;
+    }
 }
 
 
@@ -34,8 +38,12 @@
         }
 
         .page-title {
-            margin-top: 6rem;
+            margin-top: 2rem;
             font-size: 20px;
+        }
+
+        .beautiful-text {
+            display: none;
         }
     }
 }

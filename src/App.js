@@ -26,6 +26,7 @@ function App() {
       {showContent ?
         <Provider store={store}>
           <NavigationBar />
+
         </Provider>
         :
         <StartingPage onEnter={handleEnterComplete} />

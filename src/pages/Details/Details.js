@@ -7,7 +7,7 @@ export default function Details() {
     const detailsCocktail = useSelector(state => state.details);
 
     return (
-        <div>
+        <div className="details-container">
             {detailsCocktail && <DetailsCard />}
         </div>
     )

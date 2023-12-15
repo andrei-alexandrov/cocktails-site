@@ -21,7 +21,7 @@ export default function CocktailCard({ fetchedData }) {
         <Container fluid className="card-wrapper">
             {fetchedData.map((cocktail) => (
                 <Card key={cocktail.id} className="card-item">
-                    <Card.Img variant="top" src={cocktail.image} className="card-image" />
+                    <Card.Img variant="top" src={cocktail.image} className="card-image" alt="cocktail-card" />
                     <Card.Body className="card-body">
                         <Card.Title className="card-title">{cocktail.title}</Card.Title>
                         <Card.Text className="card-type">Type:&nbsp; {cocktail.type}</Card.Text>

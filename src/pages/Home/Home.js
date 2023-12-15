@@ -63,24 +63,22 @@ export default function Home() {
     }
 
     return (
-        <main>
-            <div className="home-container">
-                <div className="colorful-line" >
-                    <BeautifulText title="&nbsp;" />
-                </div>
-                <h4 className="page-title">Enter your favorite letter to display cocktails with it</h4>
-                <input
-                    className="input-letter"
-                    type="text"
-                    placeholder="Enter a letter"
-                    value={searchLetter}
-                    onChange={handleInputChange}
-                />
+        <main className="home-container">
+            <div className="colorful-line" >
+                <BeautifulText title="&nbsp;" />
             </div>
+            <h4 className="page-title">Enter your favorite letter to display cocktails with it</h4>
+            <input
+                className="input-letter"
+                type="text"
+                placeholder="Enter a letter"
+                value={searchLetter}
+                onChange={handleInputChange}
+            />
 
             <CocktailCard fetchedData={cocktails} />
             <BackToTopBtn />
-            <div style={{ marginBottom: "-9px" }}>
+            <div className="beautiful-text" >
                 <BeautifulText title="&nbsp;" />
             </div>
             <Footer />
