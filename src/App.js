@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Provider } from "react-redux";
 import NavigationBar from './components/Navbar/NavigationBar';
 import store from './store/store';
+import { Analytics } from "@vercel/analytics/react";
 
 import './App.scss';
 import StartingPage from "./pages/StartingPage/StartingPage";
@@ -31,6 +32,7 @@ function App() {
         :
         <StartingPage onEnter={handleEnterComplete} />
       }
+      <Analytics />
     </div>
   );
 }
