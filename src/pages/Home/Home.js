@@ -64,7 +64,7 @@ export default function Home() {
 
     return (
         <main className="home-container">
-            <div className="colorful-line" >
+            <div className="colorful-line-top" >
                 <BeautifulText title="&nbsp;" />
             </div>
             <h4 className="page-title">Enter your favorite letter to display cocktails with it</h4>
@@ -78,7 +78,7 @@ export default function Home() {
 
             <CocktailCard fetchedData={cocktails} />
             <BackToTopBtn />
-            <div className="beautiful-text" >
+            <div className="colorful-line-bottom" >
                 <BeautifulText title="&nbsp;" />
             </div>
             <Footer />

@@ -2,7 +2,7 @@
     text-align: center;
     color: whitesmoke;
 
-    .colorful-line {
+    .colorful-line-top {
         margin-top: 13px;
     }
 
@@ -25,15 +25,15 @@
         }
     }
 
-    .beautiful-text {
-        margin-bottom: -53px;
+    .colorful-line-bottom {
+        margin-bottom: -50px;
     }
 }
 
 
 @media screen and (max-width: 768px) {
     .home-container {
-        .colorful-line {
+        .colorful-line-top {
             margin-top: 80px;
         }
 
@@ -42,16 +42,20 @@
             font-size: 20px;
         }
 
-        .beautiful-text {
-            display: none;
+        .colorful-line-bottom {
+            // display: none;
         }
     }
 }
 
 @media screen and (min-width: 767px) and (max-width: 991px) {
     .home-container {
-        .colorful-line {
-            margin-top: 15px;
+        .colorful-line-top {
+            margin-top: 17px;
+        }
+
+        .colorful-line-bottom {
+            margin-bottom: -54px;
         }
     }
 }
