@@ -21,6 +21,28 @@
                 list-style: none;
             }
 
+            li {
+                font-size: 18px;
+            }
+
+            .cocktail-title {
+                font-size: 28px;
+                font-weight: 400;
+                color: #d2aa26;
+            }
+
+            .cocktail-prepare,
+            .cocktail-incgredients {
+                font-weight: 300;
+                font-size: 20px;
+                color: #d2aa26;
+            }
+
+            .cocktail-type,
+            .cocktail-description {
+                font-size: 18px;
+            }
+
             .footer-wrapper {
                 display: flex;
                 justify-content: center;
@@ -28,6 +50,11 @@
 
                 .card-btn-add {
                     @include addButton();
+                    font-size: 13px;
+                }
+
+                .card-btn-remove {
+                    @include removeButton();
                     font-size: 13px;
                 }
 
@@ -41,29 +68,32 @@
 }
 
 @media (min-width: 991px) {
-    .custom-card {
-        flex-direction: row !important;
-        justify-content: center;
-        text-align: left;
-        color: white !important;
-        font-size: 16px;
+    .details-container {
+        .custom-card {
+            flex-direction: row !important;
+            justify-content: center;
+            text-align: left;
+            color: white !important;
+            font-size: 16px;
 
-        .details-card-image {
-            max-width: 520px;
-            margin-right: 20px;
-        }
+            .details-card-image {
+                max-width: 520px;
+                margin-right: 20px;
+            }
 
-        .body-wrapper {
-            .footer-wrapper {
-                position: relative;
-                gap: 18px;
-                right: 9px;
-                bottom: 4px;
-                height: 73px;
+            .body-wrapper {
+                .footer-wrapper {
+                    position: relative;
+                    gap: 18px;
+                    right: 9px;
+                    bottom: 4px;
+                    height: 73px;
 
-                .card-btn-add,
-                .card-btn-goBack {
-                    font-size: 15px !important;
+                    .card-btn-add,
+                    .card-btn-remove,
+                    .card-btn-goBack {
+                        font-size: 15px;
+                    }
                 }
             }
         }

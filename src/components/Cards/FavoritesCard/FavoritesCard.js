@@ -21,15 +21,14 @@ export default function FavoritesCard() {
             <Container fluid className="card-wrapper">
                 {favoritesData.map((cocktail) => (
                     <Card key={cocktail.id} className="card-item">
-
-                        <Card.Img variant="top" src={cocktail.image} className="card-image" alt="cocktail-image" />
-
-                        <Card.Body className="card-body">
-                            <Card.Title className="card-title">{cocktail.title}</Card.Title>
-                            <Card.Text className="card-type">Type: {cocktail.type}</Card.Text>
-                            <Card.Text className="card-type">{cocktail.description}</Card.Text>
-                        </Card.Body>
-
+                        <div className="card-content">
+                            <Card.Img variant="top" src={cocktail.image} className="card-image" alt="cocktail-image" />
+                            <Card.Body className="card-body">
+                                <Card.Title className="card-title">{cocktail.title}</Card.Title>
+                                <Card.Text className="card-type">Type: {cocktail.type}</Card.Text>
+                                {/* <Card.Text className="card-type">{cocktail.description}</Card.Text> */}
+                            </Card.Body>
+                        </div>
                         <Card.Footer className="footer-btn">
                             <Button
                                 className="card-btn-remove"
@@ -38,7 +37,7 @@ export default function FavoritesCard() {
                                 Remove
                             </Button>
                             <Button
-                                className="card-btn-details"                        
+                                className="card-btn-details"
                                 onClick={() => redirectToDetailsPage(cocktail)}
                             >
                                 Details

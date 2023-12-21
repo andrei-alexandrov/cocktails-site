@@ -16,7 +16,7 @@
         text-align: center;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
         width: 330px;
-      
+
         &:hover {
             box-shadow: 0 0 26px $hover-color;
         }
@@ -32,16 +32,16 @@
             }
 
             .card-type {
-                // display: flex;
+                margin-top: 16px;
                 color: $main-color;
                 font-size: 19px;
             }
 
             h2 {
+                color: white;
+                background-color: rgb(15, 14, 14);
                 font-size: 20px;
                 padding: 5px;
-                background-color: rgb(15, 14, 14);
-                color: white;
                 border-radius: 5px;
             }
 
@@ -92,5 +92,37 @@
     svg {
         width: 200px !important;
         height: 200px !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .card-wrapper {
+        .card-item {
+            .card-content {
+                display: flex;
+
+                .card-image {
+                    width: 115px;
+                    height: 115px;
+                    margin-left: 20px;
+                    margin-top: 25px;
+                }
+
+                .card-body {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 7px;
+                    gap: 12px;
+
+                    .card-type {
+                        margin-top: 12px;
+                    }
+                }
+            }
+
+            .footer-btn {
+                margin-top: 18px;
+            }
+        }
     }
 }
